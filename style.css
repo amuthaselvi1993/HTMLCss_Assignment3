@@ -1,0 +1,182 @@
+@font-face {
+  font-family: "Aerospace"; /* Name of the font family */
+  src: url("assets/AstroSpace-0Wl3o.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+#home {
+  height: 100vh;
+  background-image: url(images/hero_img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+#home img {
+  width: 200px;
+  height: 100px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin-top: 40px;
+  margin-right: 40px;
+}
+ul a {
+  font-family: Aerospace;
+  font-weight: 600;
+  color: #079dff;
+  text-decoration: none;
+}
+#home h1 {
+  align-items: center;
+  font-family: Aerospace;
+  margin: 120px;
+  margin-left: 450px;
+  color: #079dff;
+}
+.normal_section {
+  height: 100vh;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+#scroll_to_top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 5;
+}
+#sea_weed_visuals {
+  margin: 40px;
+  /* padding: 30px; */
+  width: 500px;
+  height: 380px;
+  line-height: 1.7;
+  color: #079dff;
+}
+#small {
+  font-family: "DM Mono", monospace;
+  font-weight: 400;
+  font-size: 11.2px;
+  letter-spacing: 1.5px;
+  word-spacing: 2.5px;
+}
+#title {
+  font-family: "Aerospace";
+  font-weight: 600;
+  font-size: 36px;
+  margin: 0px 0px 16px;
+  letter-spacing: 1.5px;
+  word-spacing: 2.5px;
+}
+#contents {
+  font-family: "Public Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  margin: 0px 0px 16px;
+  letter-spacing: 1.5px;
+  word-spacing: 2.5px;
+  margin: 14px 0px 24px;
+}
+#video_container {
+  min-width: 877px;
+  min-height: 493px;
+  margin: 20px;
+  margin-top: 40px;
+}
+#image_gallery {
+  display: grid;
+  grid-template-rows: 0.1fr 1fr 0.25fr 0.75fr;
+  grid-template-columns: 2fr 2fr 2fr;
+  align-items: start;
+  justify-content: center;
+  font-family: Aerospace;
+  letter-spacing: 1.2px;
+  word-spacing: 1.5px;
+  grid-auto-flow: column;
+  padding: 20px;
+  padding-left: 40px;
+  row-gap: 15px;
+  color: #079dff;
+}
+.item1 {
+  grid-column: 1 / span 3;
+  align-items: left;
+  margin-top: 80px;
+  grid-row: 1;
+  margin-bottom: 20px;
+}
+#image_gallery img {
+  height: 300px;
+  width: 350px;
+}
+
+#image_gallery p {
+  font-family: "DM Mono", monospace;
+  font-weight: 400;
+  font-size: 14px;
+}
+#image_container h4 {
+  font-weight: 400;
+  font-size: 22px;
+}
+#quick_facts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* position: relative; -- Need to check if this is needed mandatorily */
+  overflow: hidden;
+}
+#background-video {
+  position: absolute;
+  min-width: 100%;
+  height: 100vh;
+  z-index: 0;
+  object-fit: cover;
+  opacity: 0.6;
+}
+#quick_facts_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  z-index: 3;
+  font-family: "Aerospace";
+  font-weight: 600;
+  gap: 20px;
+  min-width: 100%;
+  padding-right: 150px;
+  color: #079dff;
+}
+#quick_facts_content h1 {
+  font-size: 45px;
+}
+.ques {
+  font-size: 24px;
+  font-weight: 300;
+  opacity: 0.8;
+}
+.ans {
+  font-size: 30px;
+  font-weight: 300;
+}
